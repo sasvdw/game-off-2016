@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Rotate : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class Rotate : MonoBehaviour
     void Start()
     {
         this.torque = 0;
-        this.body = GetComponentInParent<Rigidbody2D>();
+        this.body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

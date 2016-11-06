@@ -11,7 +11,7 @@ public class Thruster : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        this.body = GetComponentInParent<Rigidbody2D>();
+        this.body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
