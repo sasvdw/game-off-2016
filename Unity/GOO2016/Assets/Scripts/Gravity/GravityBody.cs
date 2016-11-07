@@ -55,9 +55,9 @@ public class GravityBody : MonoBehaviour
     {
         var heading = this.rigidbody2D.position - body.rigidbody2D.position;
 
-        var r = heading.magnitude;
+        var rSquared = heading.sqrMagnitude;
 
-        var force = GravityBody.bigG * (this.rigidbody2D.mass * body.rigidbody2D.mass) / (r * r);
+        var force = bigG * (this.rigidbody2D.mass * body.rigidbody2D.mass) / (rSquared);
 
         return heading.normalized * force;
     }
