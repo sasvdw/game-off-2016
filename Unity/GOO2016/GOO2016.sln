@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOO2016.CSharp", "GOO2016.CSharp.csproj", "{016139B7-78B1-E97F-A359-A608771E157D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOO2016.CSharp.Editor", "GOO2016.CSharp.Editor.csproj", "{4D25873D-3745-6A11-ACB0-C40C383900DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOO2016.Domain", "..\GOO2016.Domain\GOO2016.Domain.csproj", "{F9E08C74-4758-4E20-B65B-9F0B0C7E26C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{4D25873D-3745-6A11-ACB0-C40C383900DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D25873D-3745-6A11-ACB0-C40C383900DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D25873D-3745-6A11-ACB0-C40C383900DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E08C74-4758-4E20-B65B-9F0B0C7E26C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E08C74-4758-4E20-B65B-9F0B0C7E26C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E08C74-4758-4E20-B65B-9F0B0C7E26C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E08C74-4758-4E20-B65B-9F0B0C7E26C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
