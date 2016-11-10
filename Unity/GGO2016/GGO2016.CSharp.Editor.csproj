@@ -100,6 +100,9 @@
     <Reference Include="NSubstitute">
       <HintPath>Assets\UnityTestTools\UnitTesting\Editor\NSubstitute\NSubstitute.dll</HintPath>
     </Reference>
+    <Reference Include="GOO2016.Domain">
+      <HintPath>Assets\GOO2016.Domain.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GGO2016.CSharp.csproj">

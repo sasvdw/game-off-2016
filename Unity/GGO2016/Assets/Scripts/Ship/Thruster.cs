@@ -3,10 +3,7 @@ using System.Collections;
 
 public class Thruster : MonoBehaviour
 {
-    public float Speed = 10.0f;
-
     private Rigidbody2D body;
-    private Vector2 force;
 
     // Use this for initialization
     void Start()
@@ -18,15 +15,16 @@ public class Thruster : MonoBehaviour
     void Update()
     {
         var input = Input.GetAxis("Vertical");
-        var thrust = input > 0 ? input : 0;
+        var throttle = input > 0 ? input : 0;
 
-        this.force = new Vector2(0, thrust * Speed);
+        ShipFactory.CurrentShip.SetThrottle(throttle);
     }
 
     void FixedUpdate()
     {
+        var forceVector = new Vector2(0, ShipFactory.CurrentShip.Engine.ThrustForce);
         var rot = Quaternion.Euler(0, 0, this.body.rotation);
-        Vector2 force = rot * this.force;
+        Vector2 force = rot * forceVector;
         this.body.AddForce(force);
     }
 }
