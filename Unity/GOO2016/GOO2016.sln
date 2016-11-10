@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOO2016.CSharp", "GOO2016.CSharp.csproj", "{016139B7-78B1-E97F-A359-A608771E157D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOO2016.CSharp.Editor", "GOO2016.CSharp.Editor.csproj", "{4D25873D-3745-6A11-ACB0-C40C383900DE}"

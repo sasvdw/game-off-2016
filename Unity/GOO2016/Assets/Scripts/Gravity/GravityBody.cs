@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GravityBody : MonoBehaviour
 {
-    private const float bigG = 0.9f;
+    private const float bigG = 0.6f;
 
     private readonly HashSet<GravityBody> bodies;
     private Rigidbody2D rigidbody2D;
