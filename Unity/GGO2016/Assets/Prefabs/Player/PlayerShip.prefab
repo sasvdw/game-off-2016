@@ -25,6 +25,7 @@ GameObject:
   - 114: {fileID: 114000013725589094}
   - 114: {fileID: 114000010668184698}
   - 114: {fileID: 114000011798785300}
+  - 114: {fileID: 114000013358098284}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -99,7 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5555f064158e12443b3b888a277fe514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
 --- !u!114 &114000011798785300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,6 +111,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a2cbcff8118c04caba6803e26dd419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000013358098284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013145008056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d49f4f3a1f35d489ff5f5b25f8d3a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThrustSpeed: 12
+  YawSpeed: 5
 --- !u!114 &114000013725589094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acaae086ad902f47a44fd895d02a2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 20
 --- !u!212 &212000012397118350
 SpriteRenderer:
   m_ObjectHideFlags: 1
