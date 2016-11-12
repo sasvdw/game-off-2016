@@ -20,6 +20,6 @@ public class Rotate : MonoBehaviour
 
     void FixedUpdate()
     {
-        body.AddTorque(-ShipFactory.CurrentShip.ReactionControlSystem.YawTorque);
+        body.AddTorque(-ShipFactory.CurrentShip.YawTorque);
     }
 }

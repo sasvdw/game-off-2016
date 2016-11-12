@@ -23,7 +23,7 @@ namespace GGO2016.Unity.Assets.Scripts.Ship
 
         void FixedUpdate()
         {
-            var forceVector = new Vector2(0, ShipFactory.CurrentShip.Engine.ThrustForce);
+            var forceVector = new Vector2(0, ShipFactory.CurrentShip.ThrustForce);
             var rot = Quaternion.Euler(0, 0, this.body.rotation);
             Vector2 force = rot * forceVector;
             this.body.AddForce(force);

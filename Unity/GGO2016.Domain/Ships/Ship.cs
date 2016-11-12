@@ -4,13 +4,17 @@ namespace GOO2016.Domain.Ships
 {
     public class Ship
     {
-        public Engine Engine { get; }
-        public ReactionControlSystem ReactionControlSystem { get; }
+        private readonly Engine engine;
+        private readonly ReactionControlSystem reactionControlSystem;
+
+        public float ThrustForce => this.engine.ThrustForce;
+        public float YawTorque => this.reactionControlSystem.YawTorque;
+
 
         public Ship(Engine engine, ReactionControlSystem reactionControlSystem)
         {
-            this.Engine = engine;
-            this.ReactionControlSystem = reactionControlSystem;
+            this.engine = engine;
+            this.reactionControlSystem = reactionControlSystem;
         }
 
         public void SetThrottle(float throttle)
@@ -20,7 +24,7 @@ namespace GOO2016.Domain.Ships
                 throw new ArgumentOutOfRangeException(nameof(throttle), "Value should be between 0 and 1");
             }
 
-            this.Engine.SetThrottle(throttle);
+            this.engine.SetThrottle(throttle);
         }
 
         public void SetYaw(float amount)
@@ -30,7 +34,7 @@ namespace GOO2016.Domain.Ships
                 throw new ArgumentOutOfRangeException(nameof(amount), "Value should be between -1 and 1");
             }
 
-            this.ReactionControlSystem.SetYaw(amount);
+            this.reactionControlSystem.SetYaw(amount);
         }
     }
 }
