@@ -73,9 +73,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\CameraFollowShip.cs" />
-    <Compile Include="Assets\Scripts\Gravity\GravityBody.cs" />
+    <Compile Include="Assets\Scripts\Gravity\UnityPosition.cs" />
+    <Compile Include="Assets\Scripts\Meteor\MeteorFactory.cs" />
     <Compile Include="Assets\Scripts\Ship\Rotate.cs" />
     <Compile Include="Assets\Scripts\Ship\ShipFactory.cs" />
+    <Compile Include="Assets\Scripts\Ship\ShipMass.cs" />
     <Compile Include="Assets\Scripts\Ship\Thruster.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />

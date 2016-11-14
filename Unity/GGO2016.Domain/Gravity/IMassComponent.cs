@@ -1,6 +1,6 @@
 ﻿namespace GOO2016.Domain.Gravity
 {
-    public interface IMassProvider
+    public interface IMassComponent
     {
         float Mass { get; }
     }

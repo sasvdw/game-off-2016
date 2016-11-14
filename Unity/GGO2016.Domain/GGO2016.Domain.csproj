@@ -42,8 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gravity\Body.cs" />
-    <Compile Include="Gravity\IMassProvider.cs" />
-    <Compile Include="Gravity\IPositionProvider.cs" />
+    <Compile Include="Gravity\IMassComponent.cs" />
+    <Compile Include="Gravity\IPositionComponent.cs" />
+    <Compile Include="Gravity\MassComponent.cs" />
     <Compile Include="Gravity\Simulation.cs" />
     <Compile Include="Players\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

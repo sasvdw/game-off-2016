@@ -24,8 +24,8 @@ GameObject:
   - 60: {fileID: 60000012055657630}
   - 114: {fileID: 114000013725589094}
   - 114: {fileID: 114000010668184698}
-  - 114: {fileID: 114000011798785300}
-  - 114: {fileID: 114000013358098284}
+  - 114: {fileID: 114000011927555150}
+  - 114: {fileID: 114000010943568162}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5555f064158e12443b3b888a277fe514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000011798785300
+--- !u!114 &114000010943568162
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,10 +108,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013145008056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a2cbcff8118c04caba6803e26dd419, type: 3}
+  m_Script: {fileID: 11500000, guid: a49929341314db049a3ca43cf0e3b9a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013358098284
+--- !u!114 &114000011927555150
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -119,11 +119,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013145008056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d49f4f3a1f35d489ff5f5b25f8d3a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 637a4aa39b301ef4ab15944b6c7ee2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThrustSpeed: 12
-  YawSpeed: 5
 --- !u!114 &114000013725589094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,7 +161,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300436, guid: a8ae2aa70c152c145a3eef9dc2a5bebc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -2,7 +2,7 @@
 
 namespace GOO2016.Domain.Gravity
 {
-    public interface IPositionProvider
+    public interface IPositionComponent
     {
         Vector2 Position { get; }
     }

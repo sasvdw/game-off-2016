@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 
-public class Rotate : MonoBehaviour
+namespace GGO2016.Unity.Assets.Scripts.Ship
 {
-    private Rigidbody2D body;
-
-    // Use this for initialization
-    void Start()
+    public class Rotate : MonoBehaviour
     {
-        this.body = GetComponent<Rigidbody2D>();
-    }
+        private Rigidbody2D body;
 
-    // Update is called once per frame
-    void Update()
-    {
-        var amount = Input.GetAxis("Horizontal");
+        // Use this for initialization
+        void Start()
+        {
+            this.body = this.GetComponent<Rigidbody2D>();
+        }
 
-        ShipFactory.CurrentShip.SetYaw(amount);
-    }
+        // Update is called once per frame
+        void Update()
+        {
+            var amount = Input.GetAxis("Horizontal");
 
-    void FixedUpdate()
-    {
-        body.AddTorque(-ShipFactory.CurrentShip.YawTorque);
+            ShipFactory.CurrentShip.SetYaw(amount);
+        }
+
+        void FixedUpdate()
+        {
+            this.body.AddTorque(-ShipFactory.CurrentShip.YawTorque);
+        }
     }
 }

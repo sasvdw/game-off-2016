@@ -5,12 +5,12 @@ namespace GOO2016.Domain.Gravity
 {
     public class Body
     {
-        private readonly IMassProvider massProvider;
-        private readonly IPositionProvider positionProvider;
+        private readonly IMassComponent massComponent;
+        private readonly IPositionComponent positionComponent;
         private readonly HashSet<Body> otherBodies;
 
-        public float Mass => this.massProvider.Mass;
-        public Vector2 Posiition => this.positionProvider.Position;
+        public float Mass => this.massComponent.Mass;
+        public Vector2 Position => this.positionComponent.Position;
 
         public Vector2 NetForce
         {
@@ -20,7 +20,7 @@ namespace GOO2016.Domain.Gravity
 
                 foreach (var otherBody in this.otherBodies)
                 {
-                    var heading = otherBody.Posiition - this.Posiition;
+                    var heading = otherBody.Position - this.Position;
 
                     var rSquared = heading.sqrMagnitude;
 
@@ -33,12 +33,12 @@ namespace GOO2016.Domain.Gravity
             }
         }
 
-        public Body(IMassProvider massProvider, IPositionProvider positionProvider, Simulation simulation)
+        public Body(Simulation simulation, IMassComponent massComponent, IPositionComponent positionComponent)
         {
             this.otherBodies = new HashSet<Body>(simulation.Bodies);
 
-            this.massProvider = massProvider;
-            this.positionProvider = positionProvider;
+            this.massComponent = massComponent;
+            this.positionComponent = positionComponent;
 
             simulation.Add(this);
 

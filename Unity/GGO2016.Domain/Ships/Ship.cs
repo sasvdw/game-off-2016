@@ -1,4 +1,6 @@
 ﻿using System;
+using GOO2016.Domain.Gravity;
+using UnityEngine;
 
 namespace GOO2016.Domain.Ships
 {
@@ -6,15 +8,17 @@ namespace GOO2016.Domain.Ships
     {
         private readonly Engine engine;
         private readonly ReactionControlSystem reactionControlSystem;
+        private readonly Body body;
 
         public float ThrustForce => this.engine.ThrustForce;
         public float YawTorque => this.reactionControlSystem.YawTorque;
+        public Vector2 NetGravityForce => this.body.NetForce;
 
-
-        public Ship(Engine engine, ReactionControlSystem reactionControlSystem)
+        public Ship(Engine engine, ReactionControlSystem reactionControlSystem, Body body)
         {
             this.engine = engine;
             this.reactionControlSystem = reactionControlSystem;
+            this.body = body;
         }
 
         public void SetThrottle(float throttle)

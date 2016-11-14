@@ -7,13 +7,13 @@ namespace GGO2016.Unity.Assets.Scripts.Ship
         private Rigidbody2D body;
 
         // Use this for initialization
-        void Start()
+        private void Start()
         {
             this.body = this.GetComponent<Rigidbody2D>();
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             var input = Input.GetAxis("Vertical");
             var throttle = input > 0 ? input : 0;
@@ -21,7 +21,7 @@ namespace GGO2016.Unity.Assets.Scripts.Ship
             ShipFactory.CurrentShip.SetThrottle(throttle);
         }
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
             var forceVector = new Vector2(0, ShipFactory.CurrentShip.ThrustForce);
             var rot = Quaternion.Euler(0, 0, this.body.rotation);

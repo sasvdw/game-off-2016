@@ -10,7 +10,32 @@ namespace GOO2016.Domain.Gravity
 
         public const float BigG = 0.6f;
 
-        public Simulation()
+        private static volatile Simulation instance;
+
+        private static object lockObject = new object();
+
+        public static Simulation Instance
+        {
+            get
+            {
+                if(instance != null)
+                {
+                    return instance;
+                }
+
+                lock(lockObject)
+                {
+                    if(instance == null)
+                    {
+                        instance = new Simulation();
+                    }
+                }
+
+                return instance;
+            }
+        }
+
+        private Simulation()
         {
             this.bodies = new HashSet<Body>();
         }
