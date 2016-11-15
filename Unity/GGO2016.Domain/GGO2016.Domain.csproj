@@ -49,6 +49,7 @@
     <Compile Include="Players\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ships\Engine.cs" />
+    <Compile Include="Ships\IVelocityComponent.cs" />
     <Compile Include="Ships\ReactionControlSystem.cs" />
     <Compile Include="Ships\Ship.cs" />
   </ItemGroup>

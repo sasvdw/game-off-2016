@@ -20,9 +20,10 @@ namespace GGO2016.Unity.Assets.Scripts.Ship
             ship.transform.position = this.transform.position;
             var shipMassComponent = ship.GetComponent<IMassComponent>();
             var shipPositionComponent = ship.GetComponent<IPositionComponent>();
+            var shipVelocity = ship.GetComponent<IVelocityComponent>();
             var shipBody = new Body(Simulation.Instance, shipMassComponent, shipPositionComponent);
 
-            CurrentShip = new GOO2016.Domain.Ships.Ship(engine, reactionControlSystem, shipBody);
+            CurrentShip = new GOO2016.Domain.Ships.Ship(engine, reactionControlSystem, shipBody, shipVelocity);
         }
 	
         // Update is called once per frame

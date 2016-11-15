@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Ship\Rotate.cs" />
     <Compile Include="Assets\Scripts\Ship\ShipFactory.cs" />
     <Compile Include="Assets\Scripts\Ship\ShipMass.cs" />
+    <Compile Include="Assets\Scripts\Ship\ShipVelocity.cs" />
     <Compile Include="Assets\Scripts\Ship\Thruster.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
