@@ -6,27 +6,27 @@ namespace GGO2016.Unity.Assets.Scripts.Meteor
 {
     public class MeteorFactory : MonoBehaviour
     {
-        public float Mass = 10.0f;
-        private readonly HashSet<Body> bodies;
-
-        public MeteorFactory()
-        {
-            this.bodies = new HashSet<Body>();
-        }
+        public GameObject[] MeteorPrefabs;
 
         // Use this for initialization
         void Start ()
         {
-            var massComponent = new MassComponent(this.Mass);
-            var positionComponent = this.GetComponent<IPositionComponent>();
+            if(this.MeteorPrefabs.Length == 0)
+            {
+                return;
+            }
 
-            var body = new Body(Simulation.Instance, massComponent, positionComponent);
-            this.bodies.Add(body);
-        }
-	
-        // Update is called once per frame
-        void Update () {
-	
+            var index = Random.Range(0, this.MeteorPrefabs.Length);
+            var meteor = Instantiate(this.MeteorPrefabs[index]);
+            meteor.transform.position = this.transform.position;
+            var rotation = Random.Range(0.0f, 360.0f);
+            meteor.transform.Rotate(0.0f, 0.0f, rotation);
+            var massComponent = meteor.GetComponent<IMassComponent>();
+            var positionComponent = meteor.GetComponent<IPositionComponent>();
+
+            new Body(Simulation.Instance, massComponent, positionComponent);
+
+            Destroy(this.gameObject);
         }
     }
 }

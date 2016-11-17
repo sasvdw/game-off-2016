@@ -1,7 +1,7 @@
 ﻿using GOO2016.Domain.Ships;
 using UnityEngine;
 
-namespace GGO2016.Unity.Assets.Scripts.Ship
+namespace GGO2016.Unity.Assets.Scripts.Ships
 {
     public class ShipVelocity : MonoBehaviour, IVelocityComponent
     {

@@ -2,7 +2,7 @@
 using GOO2016.Domain.Ships;
 using UnityEngine;
 
-namespace GGO2016.Unity.Assets.Scripts.Ship
+namespace GGO2016.Unity.Assets.Scripts.Ships
 {
     public class ShipFactory : MonoBehaviour {
         public float ThrustSpeed = 10.0f;
@@ -23,12 +23,9 @@ namespace GGO2016.Unity.Assets.Scripts.Ship
             var shipVelocity = ship.GetComponent<IVelocityComponent>();
             var shipBody = new Body(Simulation.Instance, shipMassComponent, shipPositionComponent);
 
-            CurrentShip = new GOO2016.Domain.Ships.Ship(engine, reactionControlSystem, shipBody, shipVelocity);
-        }
-	
-        // Update is called once per frame
-        private void Update () {
-	
+            CurrentShip = new Ship(engine, reactionControlSystem, shipBody, shipVelocity);
+
+            Destroy(this.gameObject);
         }
     }
 }

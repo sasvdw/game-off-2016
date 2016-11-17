@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GGO2016.Unity.Assets.Scripts.Ship
+namespace GGO2016.Unity.Assets.Scripts.Ships
 {
     public class Rotate : MonoBehaviour
     {

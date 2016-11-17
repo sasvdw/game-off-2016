@@ -1,19 +1,10 @@
-﻿using GOO2016.Domain.Gravity;
 using UnityEngine;
 
-namespace GGO2016.Unity.Assets.Scripts.Ship
+namespace GGO2016.Unity.Assets.Scripts.Ships
 {
-    public class ShipMass : MonoBehaviour, IMassComponent
+    public class ShipGravity : MonoBehaviour
     {
         private Rigidbody2D rigidbody2D;
-
-        public float Mass
-        {
-            get
-            {
-                return this.rigidbody2D.mass;
-            }
-        }
 
         private void Start()
         {

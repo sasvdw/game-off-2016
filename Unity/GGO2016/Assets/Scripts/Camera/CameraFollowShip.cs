@@ -1,4 +1,4 @@
-﻿using GGO2016.Unity.Assets.Scripts.Ship;
+﻿using GGO2016.Unity.Assets.Scripts.Ships;
 using UnityEngine;
 
 namespace GGO2016.Unity.Assets.Scripts.Camera
