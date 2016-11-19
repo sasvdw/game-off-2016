@@ -6,8 +6,8 @@ namespace GGO2016.Unity.Assets.Scripts.Meteor
     public class MeteorFactory : MonoBehaviour
     {
         public GameObject[] MeteorPrefabs;
-        public int TotalMeteors = 100;
-        public int SpawnRadius = 100;
+        public int TotalMeteors = 500;
+        public int SpawnRadius = 250;
 
         // Use this for initialization
         void Start ()
