@@ -172,8 +172,8 @@ MonoBehaviour:
   - {fileID: 1000013544910848, guid: 6230dcd56a66db947aab1e6ac72c72e4, type: 2}
   - {fileID: 1000010194365834, guid: f3a0b07f5e651ad4a802123156ede04e, type: 2}
   - {fileID: 1000010525664912, guid: 699ed90a0da659c44a5831957ba63b9f, type: 2}
-  TotalMeteors: 500
-  SpawnRadius: 200
+  TotalMeteors: 1000
+  SpawnRadius: 250
 --- !u!4 &1000487147
 Transform:
   m_ObjectHideFlags: 0
