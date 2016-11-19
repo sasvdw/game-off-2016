@@ -21,7 +21,6 @@ GameObject:
   - 4: {fileID: 4000010201588522}
   - 212: {fileID: 212000013138542090}
   - 60: {fileID: 60000011711587818}
-  - 114: {fileID: 114000010759034116}
   - 114: {fileID: 114000012729789718}
   - 114: {fileID: 114000013851433574}
   m_Layer: 0
@@ -64,18 +63,6 @@ PolygonCollider2D:
       - {x: 0.15473582, y: 0.46576482}
       - {x: -0.3490556, y: 0.3241958}
       - {x: -0.47540474, y: -0.10541825}
---- !u!114 &114000010759034116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011225257202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0736cf039c3158a4b91c801f4b789963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MeteorPrefabs: []
 --- !u!114 &114000012729789718
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -21,7 +21,6 @@ GameObject:
   - 4: {fileID: 4000012464712236}
   - 212: {fileID: 212000010977365992}
   - 60: {fileID: 60000013025365882}
-  - 114: {fileID: 114000013220348222}
   - 114: {fileID: 114000012124940436}
   - 114: {fileID: 114000011045497318}
   m_Layer: 0
@@ -87,18 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49929341314db049a3ca43cf0e3b9a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013220348222
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011701346474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0736cf039c3158a4b91c801f4b789963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MeteorPrefabs: []
 --- !u!212 &212000010977365992
 SpriteRenderer:
   m_ObjectHideFlags: 1
