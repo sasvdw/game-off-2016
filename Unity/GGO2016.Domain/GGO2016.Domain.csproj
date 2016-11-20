@@ -39,6 +39,9 @@
     <Reference Include="UnityEngine">
       <HintPath>..\GGO2016\Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\GGO2016\Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gravity\Body.cs" />
@@ -52,6 +55,8 @@
     <Compile Include="Ships\IVelocityComponent.cs" />
     <Compile Include="Ships\ReactionControlSystem.cs" />
     <Compile Include="Ships\Ship.cs" />
+    <Compile Include="Turrets\Gun.cs" />
+    <Compile Include="Turrets\Turret.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -13,8 +13,7 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.2p2</UnityVersion>
@@ -75,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\CameraFollowShip.cs" />
     <Compile Include="Assets\Scripts\Gravity\UnityPosition.cs" />
+    <Compile Include="Assets\Scripts\Guns\Gun.cs" />
     <Compile Include="Assets\Scripts\Meteor\MeteorFactory.cs" />
     <Compile Include="Assets\Scripts\Meteor\MeteorMass.cs" />
     <Compile Include="Assets\Scripts\Ships\Rotate.cs" />
@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Ships\ShipMass.cs" />
     <Compile Include="Assets\Scripts\Ships\ShipVelocity.cs" />
     <Compile Include="Assets\Scripts\Ships\Thruster.cs" />
+    <Compile Include="Assets\Scripts\Turrets\Turret.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
     <Compile Include="Assets\UnityTestTools\Assertions\Assertions.cs" />
