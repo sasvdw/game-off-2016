@@ -1,4 +1,4 @@
-﻿namespace GOO2016.Domain.Turrets
+﻿namespace GGO2016.Domain.Turrets
 {
     public class Gun
     {

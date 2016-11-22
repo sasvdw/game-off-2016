@@ -7,8 +7,8 @@
     <ProjectGuid>{F9E08C74-4758-4E20-B65B-9F0B0C7E26C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GOO2016.Domain</RootNamespace>
-    <AssemblyName>GOO2016.Domain</AssemblyName>
+    <RootNamespace>GGO2016.Domain</RootNamespace>
+    <AssemblyName>GGO2016.Domain</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
@@ -38,9 +38,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
       <HintPath>..\GGO2016\Library\UnityAssemblies\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\GGO2016\Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

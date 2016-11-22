@@ -99,11 +99,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012058089352, guid: 49ae6a43c4a1d9a4ab556240450aee9d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.803
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 4000012058089352, guid: 49ae6a43c4a1d9a4ab556240450aee9d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.444
+      value: 3.39
       objectReference: {fileID: 0}
     - target: {fileID: 4000012058089352, guid: 49ae6a43c4a1d9a4ab556240450aee9d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -127,12 +127,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012058089352, guid: 49ae6a43c4a1d9a4ab556240450aee9d, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 212000012653059796, guid: 49ae6a43c4a1d9a4ab556240450aee9d,
         type: 2}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000012058089352, guid: 49ae6a43c4a1d9a4ab556240450aee9d, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49ae6a43c4a1d9a4ab556240450aee9d, type: 2}
@@ -195,66 +199,11 @@ Prefab:
     - target: {fileID: 20000013239622342, guid: 4bf1f2ad11e9e5b40af9b8fe912661cb,
         type: 2}
       propertyPath: orthographic size
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bf1f2ad11e9e5b40af9b8fe912661cb, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1000487145
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1000487147}
-  - 114: {fileID: 1000487146}
-  m_Layer: 0
-  m_Name: MeteorSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1000487146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1000487145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0736cf039c3158a4b91c801f4b789963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MeteorPrefabs:
-  - {fileID: 1000012963083694, guid: c804dae2456c891488bb248124a457b5, type: 2}
-  - {fileID: 1000011095979902, guid: 7490e8cb5b8ea12468a622124efe0f79, type: 2}
-  - {fileID: 1000011633592686, guid: d01d654d947be5348b70d9239a9d9b50, type: 2}
-  - {fileID: 1000011225257202, guid: c4aa8bd120aec084eaa5c74f19d85566, type: 2}
-  - {fileID: 1000011701346474, guid: 94139262cc50ee54c817b1031ac8b7b4, type: 2}
-  - {fileID: 1000010533067786, guid: ef9b8281dfd22e148bce12ba65010e54, type: 2}
-  - {fileID: 1000013761053288, guid: 2592b99e71293b84bbe642994b986ce0, type: 2}
-  - {fileID: 1000013001432920, guid: 56ebedb25b09ef3448371b49f899ed23, type: 2}
-  - {fileID: 1000010748453924, guid: c9768989757deeb48bf18361c09c76ec, type: 2}
-  - {fileID: 1000013544910848, guid: 6230dcd56a66db947aab1e6ac72c72e4, type: 2}
-  - {fileID: 1000010194365834, guid: f3a0b07f5e651ad4a802123156ede04e, type: 2}
-  - {fileID: 1000010525664912, guid: 699ed90a0da659c44a5831957ba63b9f, type: 2}
-  TotalMeteors: 1000
-  SpawnRadius: 250
---- !u!4 &1000487147
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1000487145}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.72, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
 --- !u!1 &1994539813
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThrustSpeed: 10
-  YawSpeed: 5
+  YawSpeed: 10
   ShipPrefab: {fileID: 1000013145008056, guid: 88e21945a2bec654a948a4064d9da1fe, type: 2}
 --- !u!4 &1994539815
 Transform:

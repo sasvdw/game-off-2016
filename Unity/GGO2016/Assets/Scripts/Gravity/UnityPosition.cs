@@ -1,4 +1,4 @@
-﻿using GOO2016.Domain.Gravity;
+﻿using GGO2016.Domain.Gravity;
 using UnityEngine;
 
 namespace GGO2016.Unity.Assets.Scripts.Gravity

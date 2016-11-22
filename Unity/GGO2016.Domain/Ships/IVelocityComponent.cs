@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GOO2016.Domain.Ships
+namespace GGO2016.Domain.Ships
 {
     public interface IVelocityComponent
     {

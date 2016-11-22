@@ -1,6 +1,6 @@
-﻿using GOO2016.Domain.Ships;
+﻿using GGO2016.Domain.Ships;
 
-namespace GOO2016.Domain.Players
+namespace GGO2016.Domain.Players
 {
     public class Player
     {

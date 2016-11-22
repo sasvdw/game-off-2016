@@ -1,8 +1,8 @@
 ﻿using System;
-using GOO2016.Domain.Gravity;
+using GGO2016.Domain.Gravity;
 using UnityEngine;
 
-namespace GOO2016.Domain.Ships
+namespace GGO2016.Domain.Ships
 {
     public class Ship
     {

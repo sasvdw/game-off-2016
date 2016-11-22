@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using GOO2016.Domain.Gravity;
+using GGO2016.Domain.Gravity;
 using UnityEngine;
 
 namespace GGO2016.Unity.Assets.Scripts.Meteor
@@ -30,7 +30,7 @@ namespace GGO2016.Unity.Assets.Scripts.Meteor
             {
                 tryCount++;
                 var insideUnitCircle = Random.insideUnitCircle;
-                var meteorPosition = (insideUnitCircle * (this.SpawnRadius - 1)) + insideUnitCircle.normalized;
+                var meteorPosition = (insideUnitCircle * (this.SpawnRadius - 1)) + insideUnitCircle.normalized * 2;
 
                 if(this.bodies.Any(x => (x.Position - meteorPosition).sqrMagnitude < 4))
                 {

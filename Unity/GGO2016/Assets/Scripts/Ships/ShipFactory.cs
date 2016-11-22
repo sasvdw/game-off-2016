@@ -1,5 +1,5 @@
-﻿using GOO2016.Domain.Gravity;
-using GOO2016.Domain.Ships;
+﻿using GGO2016.Domain.Gravity;
+using GGO2016.Domain.Ships;
 using UnityEngine;
 
 namespace GGO2016.Unity.Assets.Scripts.Ships
@@ -9,7 +9,7 @@ namespace GGO2016.Unity.Assets.Scripts.Ships
         public float YawSpeed = 10.0f;
         public GameObject ShipPrefab;
 
-        public static GOO2016.Domain.Ships.Ship CurrentShip;
+        public static Ship CurrentShip;
 
         // Use this for initialization
         private void Start ()

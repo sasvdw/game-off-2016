@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GOO2016.Domain.Gravity
+namespace GGO2016.Domain.Gravity
 {
     public class Simulation
     {
@@ -8,7 +8,7 @@ namespace GOO2016.Domain.Gravity
 
         public IEnumerable<Body> Bodies => this.bodies;
 
-        public const float BigG = 0.6f;
+        public const float BigG = 0.75f;
 
         private static volatile Simulation instance;
 

@@ -1,4 +1,4 @@
-﻿using GOO2016.Domain.Ships;
+﻿using GGO2016.Domain.Ships;
 using UnityEngine;
 
 namespace GGO2016.Unity.Assets.Scripts.Ships
