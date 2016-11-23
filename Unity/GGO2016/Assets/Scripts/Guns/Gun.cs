@@ -2,6 +2,7 @@
 
 namespace GGO2016.Unity.Assets.Scripts.Guns
 {
+    //todo refactor into domain
     public class Gun : MonoBehaviour
     {
         public Transform Lazer;
